@@ -1,0 +1,258 @@
+body {
+    padding: 0;
+    font-family: 'FeatureMonoR', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--color-dark);
+}
+
+.container {
+    padding: 0 66px;
+    width: 100%;
+}
+
+.first-block {
+    padding-top: 20px;
+}
+
+.nav {
+    display: flex;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav img {
+    transition: 0.3s ease;
+}
+
+.nav img:hover {
+    transform: scale(1.2);
+}
+
+.nav-menu {
+    color: white; /* later */
+    list-style: none;
+    display: flex;
+}
+
+.active-menu {
+    margin-left: 35px;
+    color: var(--color-grey);
+    transition: color 0.3s ease;
+}
+
+.active-menu:hover {
+    color: #b4b4b4;
+}
+
+.activated {
+    color: var(--color-white);
+    font-family: "FeatureMonoB";
+    margin: 0;
+}
+
+.main {
+    margin-top: 155px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+}
+
+.text-line {
+    background-color: var(--color-grey);
+    width: 30px;
+    height: 1.5px;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.above-main-text {
+    display: flex;
+    color: var(--color-grey);
+}
+
+.main-text {
+    font-size: 100px;
+    color: var(--color-white);
+    font-family: "FeatureMonoB";
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.sub-text {
+    font-size: 24px;
+    max-width: 490px;
+    color: var(--color-white);
+}
+
+.more-btn {
+    margin-top: 20px;
+    padding: 15px 50px;
+    gap: 10px;
+    width: 230px;
+    height: 54px;
+    border: none;
+    background: #FFFFFF;
+    color: var(--color-dark);
+    font-size: 24px;
+    line-height: 24px;
+    font-family: "FeatureMonoR";
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.more-btn:hover {
+    background: transparent;
+    color: white;
+    border: 0.5px solid white;
+}
+
+.text-logo-right {
+    width: 490px;
+    position: absolute;
+    right: 66px;
+}
+
+.marquee-container{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    background: var(--color-pink);
+    overflow: hidden;
+}
+
+.marquee{
+    font-size: 24px;
+    font-family: "FeatureMonoR";
+    padding: 5px 0;
+    color: #fff;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+}
+
+.marquee:after{
+    content: "мы умеем    мы можем    мы сделаем    мы покажем    мы починим    мы подскажем    мы решим    мы умеем    мы можем    мы сделаем    мы покажем    мы починим    мы подскажем    мы решим";
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+.second-block {
+    background: white;
+    padding-top: 100px;
+}
+
+
+.second {
+    color: var(--color-dark);
+}
+
+.primary-text {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.card {
+    background: var(--color-dark);
+    width: 1255px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.card-inside {
+    padding-top: 50px;
+    padding-left: 70px;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.card-inside::before {
+    content: url("../img/eyesvg.svg");
+    margin-top: 8px;
+    margin-right: 20px
+}
+
+.something {
+    margin-left: 140px;
+    margin-top: 0;
+    color: var(--color-grey);
+    font-size: 16px;
+}
+
+.card-inside2 {
+    padding-top: 50px;
+    padding-left: 70px;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.card-inside2::before {
+    content: url("../img/user.svg");
+    margin-top: 8px;
+    margin-right: 35px;
+}
+
+.card-inside3 {
+    padding-top: 50px;
+    padding-left: 70px;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.card-inside3::before {
+    content: url("../img/chip.svg");
+    margin-right: 20px;
+    margin-top: 8px;
+
+}
+
+.card-inside4 {
+    padding-top: 50px;
+    padding-left: 70px;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.card-inside4::before {
+    content: url("../img/sales.svg");
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.card-inside5 {
+    padding-top: 50px;
+    padding-left: 70px;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.card-inside5::before {
+    content: url("../img/warranty.svg");
+    margin-top: 8px;
+    margin-right: 20px;
+}

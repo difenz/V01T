@@ -1,0 +1,9 @@
+@font-face {
+    font-family: FeatureMonoR;
+    src: url("../font/FeatureMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: FeatureMonoB;
+    src: url("../font/FeatureMono-Bold.ttf");
+}
